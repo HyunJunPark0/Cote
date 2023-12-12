@@ -9,4 +9,4 @@ function solution(my_string, letter) {
 console.log(answer);
 
 
-- rePlaceAll()를 사용해서 문자열에 
+- rePlaceAll()를 사용해서 문자열에서 letter를 제거한 문자열을 반환
