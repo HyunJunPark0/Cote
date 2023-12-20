@@ -2,6 +2,19 @@
 
 
 function solution(n) {
+  const a = n.toString();
+  let answer = 0;
+  for(let i = 0; i < a.length; i++){
+      answer += parseInt(a[i])
+  }
+  return answer
+}
+
+
+##다른풀이
+
+
+function solution(n) {
   let answer = n
     .toString()
     .split('')
