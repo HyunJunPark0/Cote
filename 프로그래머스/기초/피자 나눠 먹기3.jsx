@@ -16,4 +16,4 @@ function solution(slice, n) {
     return Math.ceil(n / slice)
 }
 
-- Math.ceil로 소수점 올림 메서드
+- Math.ceil로 소수점 올림 메서드q

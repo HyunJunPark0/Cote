@@ -10,3 +10,8 @@ function solution(my_string) {
 
 
 - 전개연산자 외에도 .split('')메서드를 이용해서 문자열을 배열로 변경가능 -> my_string.split('').reverse().join('');
+
+function solution(array) {
+  const countMap = {}; 
+  let maxCount = 0; 
+  let mode = -1; 
