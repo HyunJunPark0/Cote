@@ -16,3 +16,4 @@ function solution(s) {
 
 - split(' ')메서드를 사용해서 공백을 기준으로 배열을 만듬.
 - parseInt()메서드를 이용해서 문자를 숫자로 바꿈 Number()로도 가능.
+
