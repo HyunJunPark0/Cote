@@ -17,4 +17,4 @@ function solution(a, b) {
 }
 
 
-- Math.abs() 음수를 양수로 변환하는 메서드 사용
+- Math.() 음수를 양수로 변환하는 메서드 사용
