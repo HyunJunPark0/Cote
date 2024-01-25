@@ -4,8 +4,19 @@
 
 function solution(price, money, count) {
   let pr = 0;
-  for(let i = 1; i <= count; i++){
-      pr += price * i
+  for (let i = 1; i <= count; i++) {
+    pr += price * i;
   }
-  return pr > money ? pr - money : 0
+  return pr > money ? pr - money : 0;
+}
+
+function solution(s) {
+  if (s.length === 4 || s.length === 6) {
+    for (let i = 0; i < s.length; i++) {
+      if (isNaN(parseInt(a[i]))) {
+        return false;
+      }
+    }
+    return true;
+  } else return false;
 }
