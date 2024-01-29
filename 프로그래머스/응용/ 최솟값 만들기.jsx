@@ -10,6 +10,12 @@
 
 // 배열 A, B가 주어질 때 최종적으로 누적된 최솟값을 return 하는 solution 함수를 완성해 주세요.
 
+// 입출력 예
+// A	B	answer
+// [1, 4, 2]	[5, 4, 4]	29
+// [1,2]	[3,4]	10
+
+
 function solution(A, B) {
   let answer = 0;
   const a = A.sort((a, b) => a - b);
