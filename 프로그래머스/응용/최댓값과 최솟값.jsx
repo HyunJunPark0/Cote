@@ -14,6 +14,6 @@ function solution(s) {
   return `${min} ${max}`
 }
 
--split()으로 문자열을 배열로
+-split()으로 문자열을 배열로 변환
 -Math.min()에 전개연산자로 배열안의 숫자들을 풀어 최솟값 반환
 -Math.max()에 전개연산자로 배열안의 숫자들을 풀어 최댓값 반환

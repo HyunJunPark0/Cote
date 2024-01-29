@@ -17,3 +17,7 @@ function solution(s) {
   }
   return answer
 }
+
+-split()으로 문자열을 배열로 변환
+-slice(-1)로 마지막 인덱스 삭제
+-toUpperCase()와 toLowerCase()로 대문자 소문자 변환.
