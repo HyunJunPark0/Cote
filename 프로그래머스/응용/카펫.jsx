@@ -10,9 +10,9 @@
 // brown	yellow	return
 // 10	2	[4, 3]
 // 8	1	[3, 3]
+// 24	24	[8, 6]
 
-
-24	24	[8, 6]function solution(brown, yellow) {
+function solution(brown, yellow) {
   // 전체 격자 수 (갈색 + 노란색)
   const total = brown + yellow;
 
