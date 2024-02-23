@@ -18,18 +18,20 @@
 // [70, 80, 50]	100	3
 
 function solution(people, limit) {
-  people.sort((a, b) => b - a); // 사람들을 몸무게 역순으로 정렬
-  let answer = 0; // 필요한 구명보트의 개수를 저장할 변수
-  let left = 0; // 왼쪽 인덱스 설정
-  let right = people.length - 1; // 오른쪽 인덱스 설정
-
-  for (; left <= right; answer++) {
-    if (people[left] + people[right] <= limit) {
-      // 왼쪽과 오른쪽 사람의 무게의 합이 제한 이하이면
-      right--; // 오른쪽 인덱스를 한 칸 왼쪽으로 이동하여 한 명을 태움
-    }
-    left++; // 왼쪽 인덱스를 한 칸 오른쪽으로 이동
+  // 사람들의 몸무게를 내림차순으로 정렬합니다.
+  people.sort((a, b) => b - a);
+  let answer = 0; // 필요한 구명보트 개수를 저장할 변수입니다.
+  let left = 0; // 가장 가벼운 사람을 가리키는 포인터입니다.
+  let right = people.length - 1; // 가장 무거운 사람을 가리키는 포인터입니다.
+  
+  // 가장 가벼운 사람부터 가장 무거운 사람까지 탐색합니다.
+  for (left = 0; left <= right; left++) {
+      // 가장 가벼운 사람과 가장 무거운 사람을 함께 태울 수 있는 경우
+      if (people[left] + people[right] <= limit) {
+          right--; // 가장 무거운 사람을 태우고 다음으로 이동합니다.
+      }
+      answer++; // 구명보트 한 대를 추가합니다.
   }
-
-  return answer; // 필요한 구명보트의 개수 반환
+  
+  return answer; // 필요한 구명보트 개수를 반환합니다.
 }
